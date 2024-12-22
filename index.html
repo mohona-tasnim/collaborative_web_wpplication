@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Collaborative Web Application</title>
-    <link href="styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <footer class="custom-footer">
-      <div class="footer-content">
-        <p class="footer-text">
-          © 2024 Your Company Name. All Rights Reserved.
-        </p>
-        <div class="footer-links">
-          <a href="#about" class="footer-link">About Us</a>
-          <a href="#contact" class="footer-link">Contact</a>
-          <a href="#privacy" class="footer-link">Privacy Policy</a>
-        </div>
-      </div>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Submission</title>
+  <style>
+    .success-message {
+      display: none;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="successMessage" class="success-message">Form submitted successfully!</p>
+
+  <script src="script.js"></script>
+</body>
 </html>
